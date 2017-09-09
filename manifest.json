@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "actionRecorder",
+    "short_name": "Action Recorder",
+    "version": "1.0.1",
+    "description": "record all action on the web page",
+    "browser_action": {
+        "default_icon": "assets/icon128.png",
+        "default_title": "Record"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "icons": {
+        "16": "assets/icon16.png",
+        "48": "assets/icon48.png",
+        "128": "assets/icon128.png"
+    },
+    "web_accessible_resources": [
+        "record.js"
+    ]
+}
